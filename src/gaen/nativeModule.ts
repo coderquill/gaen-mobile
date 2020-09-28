@@ -215,6 +215,7 @@ export const detectExposuresNow = async (): Promise<string> => {
 }
 
 export const simulateExposure = async (): Promise<"success"> => {
+  console.log(toExposureInfo(debugModule.simulateExposure()))
   return debugModule.simulateExposure()
 }
 
